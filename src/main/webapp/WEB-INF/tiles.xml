@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+	<definition name="base.definition" template="/WEB-INF/views/tiles/layout.jsp">
+		<put-attribute name="header" value="/WEB-INF/views/tiles/header.jsp"></put-attribute>
+		<put-attribute name="footer" value="/WEB-INF/views/tiles/footer.jsp"></put-attribute>
+		<put-attribute name="body" value=""></put-attribute>
+	</definition>
+	
+	<definition name="index" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/views/index.jsp"></put-attribute>
+		<put-attribute name="title" value="WELCOME"></put-attribute>
+	</definition>
+	
+		<definition name="city" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/views/city.jsp"></put-attribute>
+		<put-attribute name="title" value="CITY"></put-attribute>
+	</definition>
+	
+		<definition name="country" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/views/country.jsp"></put-attribute>
+		<put-attribute name="title" value="COUNTRY"></put-attribute>
+	</definition>
+	
+		<definition name="firstname" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/views/firstname.jsp"></put-attribute>
+		<put-attribute name="title" value="FIRSTNAME"></put-attribute>
+	</definition>
+	
+		<definition name="user" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/views/user.jsp"></put-attribute>
+		<put-attribute name="title" value="USER"></put-attribute>
+	</definition>
+	
+		<definition name="registration" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/views/registration.jsp"></put-attribute>
+		<put-attribute name="title" value="REGISTRATION"></put-attribute>
+	</definition>
+	
+	<definition name="login" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/views/login.jsp"></put-attribute>
+		<put-attribute name="title" value="LOGIN"></put-attribute>
+	</definition>
+	
+	<definition name="admin" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/views/admin.jsp"></put-attribute>
+		<put-attribute name="title" value="ADMIN"></put-attribute>
+	</definition>
+	
+	<definition name="profile" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/views/profile.jsp"></put-attribute>
+		<put-attribute name="title" value="PROFILE"></put-attribute>
+	</definition>
+	
+	<definition name="friend" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/views/friend.jsp"></put-attribute>
+		<put-attribute name="title" value="FRIEND"></put-attribute>
+	</definition>
+	
+	<definition name="message" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/views/message.jsp"></put-attribute>
+		<put-attribute name="title" value="MESSAGE"></put-attribute>
+	</definition>
+	
+	<definition name="followers" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/views/followers.jsp"></put-attribute>
+		<put-attribute name="title" value="FOLLOWERS"></put-attribute>
+	</definition>
+	
+	<definition name="search" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/views/search.jsp"></put-attribute>
+		<put-attribute name="title" value="SEARCH"></put-attribute>
+	</definition>
+	
+</tiles-definitions>
